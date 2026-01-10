@@ -5,6 +5,7 @@
 	    cue2.Volume = 9999
 	    cue2.PlaybackSpeed = 1
 	    cue2:Play()
+if game.Workspace:FindFirstChild("SeekMovingNewClone") then return end
 ---====== Load spawner ======---
  
 local spawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/Focuslol666/Utilities/refs/heads/patch-1/Doors/Entity%20Spawner/V2/Source.lua"))()
@@ -187,14 +188,7 @@ end)
 entity:SetCallback("OnStartMoving", function()
     print("Entity has started moving")
 end)
- 
-entity:SetCallback("OnReachNode", function(node)
-    print("Entity has reached node\nName: ".. node.Name.. "\nPosition: ".. node.Position)
-if game.Workspace.CurrentRooms[game.ReplicatedStorage.GameData.LatestRoom.Value]:GetAttribute("RawName") == "HaltHallway" then
-entity.Config.Damage.Enabled = false
-end
-end)
- 
+
 entity:SetCallback("OnEnterRoom", function(room, firstTime)
     if firstTime == true then
         print("Entity has entered room: ".. room.Name.. " for the first time")
