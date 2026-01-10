@@ -253,6 +253,3 @@ end)
 ---====== Run entity ======---
  
 entity:Run()
-
-cue:Destroy()
-cue2:Destroy()
