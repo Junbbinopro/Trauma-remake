@@ -24,7 +24,7 @@ local entity = spawner.Create({
 	},
 	CameraShake = {
 		Enabled = true,
-		Range = 125,
+		Range = 100,
 		Values = {5.5, 50, 0.5, 2} -- Magnitude, Roughness, FadeIn, FadeOut
 	},
 	Movement = {
@@ -132,7 +132,7 @@ local entity = spawner.Create({
 	Death = {
 	    IsolationFloors = false,
 		Type = "Guiding", -- "Curious"
-		Hints = {"You died to who you call Trauma", "Greance is faster than rush and ambush ", "And he can 1 Times","use what you leared from rush tho.","I am Nerfing All Of Entitys","To not spawn in No Hiding Spots Rooms."},
+		Hints = {"You died to Trauma...", "Use what you've learned from Rush and Ambush!","This Mob Randomly Spawns Theres No Patten to it"},
         Cause = "Trauma",
         Floors = {
             Hotel = {
