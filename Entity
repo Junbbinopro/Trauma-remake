@@ -56,7 +56,7 @@ local entity = spawner.Create({
 	},
 	Achievements = {
 	    Survive = {
-	        Enabled = true,
+	        Enabled = false,
 	        Once = false,
 	        Title = "The Terrifying Eye",
 	        Desc = "Coming from far!",
